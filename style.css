@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -32,14 +33,12 @@ body {
     font-style: italic;
 }
 
-section {
-    padding: 5%;
-}
 
 h2 {
     font-size: 2.5rem;
     line-height: 125%;
-    padding: 1rem 0rem; 
+    padding: 1rem 0rem;
+    font-family: "editorsnote";
 }
 
 h3 {
@@ -72,10 +71,6 @@ nav svg {
     transform: translateX(100%);
 }
 
-.links-visible {
-    transform: translateX(0%);
-}
-
 .links a {
     color: var(--secondary-color);
     font-size: 2rem;
@@ -106,6 +101,7 @@ nav svg {
 .front-page {
     min-height: 100vh;
     color: #FFF;
+ padding: 0.25rem 1.5rem 0rem 1.5rem;
 }
 
 .selling-point {
@@ -116,7 +112,7 @@ nav svg {
 }
 
 .selling-point h3 {
-    font-style: italic;    
+    font-style: italic;
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.497);
 }
 
@@ -132,6 +128,7 @@ nav svg {
     border-radius: 0.5rem;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
     margin: 1rem;
+    cursor: pointer;
 }
 
 .cta-main {
@@ -154,14 +151,22 @@ nav svg {
     z-index: -1;
 }
 
+.rituals-description {
+    padding: 2.5rem 0rem;
+}
+.rituals-description h3 {
+    padding: 0rem 2.5rem;
+}
+
 .rituals {
     color: var(--secondary-color);
     text-align: center;
     font-family: "editorsnote", sans-serif;
+    padding: 0;
 }
 
 .videos {
-    padding: 5rem;
+    padding: 2.5rem;
 }
 
 .videos video {
@@ -170,7 +175,9 @@ nav svg {
     margin-top: 1rem;
 }
 
-.meditation, .strength, .wellness {
+.meditation,
+.strength,
+.wellness {
     position: relative;
 }
 
@@ -185,7 +192,9 @@ nav svg {
 }
 
 .about {
-    color: var(--secondary-color)
+    padding: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
 }
 
 .about h2 {
@@ -201,15 +210,151 @@ nav svg {
 .about img {
     width: 100%;
     margin-top: 2rem;
-border-radius: 1rem;
+    border-radius: 1rem;
 }
 
-@media screen and (min-width: 768px){
+/* NEXT RETREAT SECTION */
+.nextRetreat {
+  position: relative;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* NEXT RETREAT DIV */
+.nextRetreat-Wrapper {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.nextRetreat h2 {
+    padding: 5rem 0rem;
+    text-align: center;
+}
+
+/* RICEFIELDS VIDEO */
+.nextRetreatVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.countdownTimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    color: var(--main-color);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.407);
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.countdownSubheadings {
+    font-size: 1.5rem;
+}
+
+.rituals {
+    padding-top: 0rem;
+}
+
+.whichRetreat {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "editorsnote", sans-serif;
+    width: 100%;
+}
+
+.whichRetreat h2 {
+    text-align: center;
+}
+
+.title-block {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.title-block h2 {
+    font-size: 1.5rem;
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.answer-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+
+}
+
+.answer-block {
+    padding-top: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 0 0 1px;
+    text-align: center;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.answer-block img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+.result-block {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.result-block h2 {
+    padding: 3rem 0rem 1rem 0rem;
+
+}
+
+.result-block img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
     body {
-        padding 10%;
+        padding: 0%;
     }
+
     .videos {
-        display:flex;
+        display: flex;
         gap: 2rem;
     }
 
@@ -217,10 +362,42 @@ border-radius: 1rem;
         display: flex;
         gap: 5rem;
         justify-content: space-between;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .about {
+        text-align: left;
+    }
+
+    /* .nextRetreat-Wrapper {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .front-page {
+        height: 50vh;
+    }
+
+    .nextRetreatVideo {
+        top: -53%;
+    } */
+
 }
 
-.about img {
-    width: 50%;
-}
+@media screen and (min-width: 1200px) {
+    .front-page {
+        height: 80vh;
+    }
 
+    /* .nextRetreat-Wrapper {
+        height: 50vh;
+        width: 100vw;
+    } */
+
+    /* .nextRetreatVideo {
+        top: -66%;
+    } */
 }

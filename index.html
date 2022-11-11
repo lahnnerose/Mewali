@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Mewali</title>
+    <title>Mewali Paradise Retreat</title>
   </head>
+
   <body>
+    <!-- Landing Page Section -->
+
     <section class="front-page">
       <img
         class="hero-image"
         src="./Assets/meditation-hero.jpg"
         alt="Meditation"
       />
+      <!-- START NAV -->
       <nav>
         <div class="logo">
-          <?xml version='1.0' encoding='iso-8859-1'?>
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +36,7 @@
           <h1>Mewali</h1>
         </div>
         <div class="links">
+          <!-- Menu Close SVG -->
           <svg
             id="close"
             width="72px"
@@ -66,9 +70,10 @@
             />
           </svg>
           <a href="#">our story</a>
-          <a href="#">retreat</a>
+          <a href="./retreats.html">retreats</a>
           <a href="#">rituals</a>
         </div>
+        <!-- Menu Hamburger SVG -->
         <svg
           width="72px"
           height="72px"
@@ -114,18 +119,58 @@
           />
         </svg>
       </nav>
+      <!-- END NAV -->
       <div class="selling-point">
         <h2>Paradise Found</h2>
         <h3>Escape & transform yourself</h3>
         <div class="ctas">
-          <button class="cta-sec">Explore Retreat</button>
+          <a href="./retreats.html"
+            ><button class="cta-sec">Explore Retreats</button></a
+          >
           <button class="cta-main">Sign Up Today</button>
         </div>
       </div>
     </section>
+    <!-- End Landing Page Section -->
+
+    <!-- Next Retreat Section -->
+    <section class="nextRetreat">
+      <div class="nextRetreat-Wrapper">
+        <h2>Next Retreat in...</h2>
+        <video
+          muted
+          loop
+          src="./Assets/ricefields.mp4"
+          class="nextRetreatVideo"
+        ></video>
+      
+      <div class="countdownTimer">
+        <!-- Countdown timer goes here -->
+        <div class="container-day">
+          <h3 class="day">Time</h3>
+          <h3 class="countdownSubheadings">Days</h3>
+        </div>
+        <div class="container-hour">
+          <h3 class="hour">Time</h3>
+          <h3 class="countdownSubheadings">Hours</h3>
+        </div>
+        <div class="container-minute">
+          <h3 class="minute">Time</h3>
+          <h3 class="countdownSubheadings">Minutes</h3>
+        </div>
+        <div class="container-second">
+          <h3 class="second">Time</h3>
+          <h3 class="countdownSubheadings">Seconds</h3>
+        
+        </div>
+      </div>
+    </section>
+    <!-- End Next Retreat Section -->
+
+    <!-- Rituals Video Section -->
     <section class="rituals">
       <div class="rituals-description">
-        <h2>Rituals curated for you</h2>
+        <h2>Rituals curated to you</h2>
         <h3>Unlimited access to our rituals to transform your mind & body</h3>
         <div class="videos">
           <div class="meditation">
